@@ -5,16 +5,16 @@
   "dependencies": {
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.3"
   },
   "scripts": {
     "start:js": "react-scripts start",
     "build:js": "react-scripts build",
     "start:eel": "python3 index.py --develop",
-    "build:eel":
-      "python3 -m eel index.py build --onefile --noconsole --name react-eel-app",
+    "build:eel": "python3 -m eel index.py build --onefile --noconsole --name react-eel-app",
     "clean:build": "rm -rf build dist",
-
     "start": "npm-run-all -p start:*",
     "build": "npm-run-all clean:build build:*",
     "test": "react-scripts test --env=jsdom",
